@@ -1,0 +1,169 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #616161;
+	background-color: #f8f8fa;
+}
+.header{
+	background: #557efe;
+}
+.housek-content h3{
+	font-size: 26px;
+	line-height: 38px;
+}
+p,
+li{
+	font-size: 18px;
+	line-height: 38px;
+}
+li{
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+.form-content h1{
+	font-size: 43px;
+	font-weight: 600;
+	color: #808080;
+}
+.main-form{
+	background: #fff;
+}
+label{
+	font-size: 16px;
+	color: #000;
+	margin-bottom: 5px;
+}
+.form-control{
+	border-color: #c6c6c8;
+	border-radius: 1px;
+	box-shadow: none;
+	width: 100%;
+}
+.form-control:focus,
+.form-control:active{
+	border-color: #557efe;
+	box-shadow: none;
+}
+.btn{
+	font-size: 16px;
+}
+.btn-primary{
+	background-color: #546dd7;
+	border-color: #546dd7;
+}
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover{
+	box-shadow: none !important;
+	background-color: #546dd7 !important;
+}
+.main-footer{
+	background-color: #808080;
+}
+.main-footer a{
+	font-size: 18px;
+	color: #fff;
+}
+.thank-text{
+	font-size: 90px;
+    font-weight: 600;
+    color: #3465ff;
+}
+.required_star {
+    font-size: 16px;
+    color: red;
+}
+.maidhelp-error {
+    font-size: 11px;
+    position: absolute;
+    bottom: -20px;
+    color: red;
+}
+.form-group{
+	position: relative;
+	margin-bottom: 25px;
+}
+.innerpage-content p{
+	line-height: 30px;
+}
+ol ul{
+	list-style: disc;
+}
+.fs-21{
+	font-size: 21px;
+	font-weight: 500;
+}
+.fs-21 >*{
+	font-weight: 400;
+}
+.term-page ol {
+  counter-reset: level0 0;
+}
+.term-page ol{
+	padding-left: 0;
+	position: relative;
+	margin-left: 30px;
+}
+.term-page ol li::before {
+  content: counter(level0, decimal) " ";
+  counter-increment: level0;
+  position: absolute;
+  right: 100%;
+  margin-right: 10px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+}
+.term-page ol ol {
+  counter-reset: level1;
+}
+
+.term-page ol ol li::before {
+  content: counter(level0, decimal) "." counter(level1, decimal) " ";
+  counter-increment: level1;
+  position: absolute;
+  right: 100%;
+  text-align: right;
+  font-weight: normal;
+}
+.term-page ol ul{
+	padding-left: 0;
+	margin-left: 20px;
+}
+.term-page ol ul li{
+	list-style: disc;
+}
+.term-page ol li{
+	list-style: none;
+}
+.term-page ol ul li:before{
+	display: none;
+}
+/*Media*/
+@media (max-width: 767px){
+	.header img{
+	    max-width: 180px;
+	}
+	.housek-content img{
+		max-width: 250px;
+	}
+	.housek-content h3 {
+	    font-size: 22px;
+	}
+	p{
+	    font-size: 16px;
+	    line-height: 26px;
+	}
+	.form-content h1 {
+	    font-size: 35px;
+	}
+	.main-footer a {
+	    font-size: 14px;
+	}
+	label {
+	    font-size: 14px;
+	}
+	.main-form .form-group a{
+		width: 100%;
+	}
+}
